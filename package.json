@@ -1,9 +1,9 @@
 {
-  "name": "prisma-express-typescript-boilerplate",
+  "name": "express-prisma-typescript-boilerplate",
   "version": "1.0.0",
   "description": "REST API Boilerplate with Node JS, TypeScript, Express and Prisma",
   "main": "src/index.ts",
-  "repository": "",
+  "repository": "https://github.com/wiscaksono/express-prisma-typescript-boilerplate",
   "scripts": {
     "start": "yarn build && pm2 start ecosystem.config.json --no-daemon",
     "dev": "cross-env NODE_ENV=development nodemon src/index.ts",
@@ -35,8 +35,6 @@
     "eslint",
     "prettier"
   ],
-  "author": "Antonio Lázaro",
-  "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "@jest/globals": "^29.3.1",
