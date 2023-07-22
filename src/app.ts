@@ -5,16 +5,16 @@ import cors from 'cors';
 import passport from 'passport';
 import httpStatus from 'http-status';
 
-import config from '@/config/config';
-import morgan from '@/config/morgan';
-import { jwtStrategy } from '@/config/passport';
+import config from './config/config';
+import morgan from './config/morgan';
+import { jwtStrategy } from './config/passport';
 
-import xss from '@/middlewares/xss';
-import { authLimiter } from '@/middlewares/rateLimiter';
-import { errorConverter, errorHandler } from '@/middlewares/error';
+import xss from './middlewares/xss';
+import { authLimiter } from './middlewares/rateLimiter';
+import { errorConverter, errorHandler } from './middlewares/error';
 
-import routes from '@/routes/v1';
-import ApiError from '@/utils/ApiError';
+import routes from './routes/v1';
+import ApiError from './utils/ApiError';
 
 const app = express();
 

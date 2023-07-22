@@ -1,10 +1,10 @@
 import { Server } from 'http';
 
-import app from '@/app';
-import prisma from '@/client';
+import app from './app';
+import prisma from './client';
 
-import config from '@/config/config';
-import logger from '@/config/logger';
+import config from './config/config';
+import logger from './config/logger';
 
 let server: Server;
 prisma.$connect().then(() => {

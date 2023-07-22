@@ -5,11 +5,11 @@ import tokenService from './token.service';
 import userService from './user.service';
 import prisma from '../client';
 
-import ApiError from '@/utils/ApiError';
-import exclude from '@/utils/exclude';
-import { encryptPassword, isPasswordMatch } from '@/utils/encryption';
+import ApiError from '../utils/ApiError';
+import exclude from '../utils/exclude';
+import { encryptPassword, isPasswordMatch } from '../utils/encryption';
 
-import { AuthTokensResponse } from '@/types/response';
+import { AuthTokensResponse } from '../types/response';
 
 /**
  * Login with username and password

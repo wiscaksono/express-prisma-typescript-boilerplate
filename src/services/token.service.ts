@@ -3,12 +3,12 @@ import httpStatus from 'http-status';
 import moment, { Moment } from 'moment';
 import { Token, TokenType } from '@prisma/client';
 
-import config from '@/config/config';
+import config from '../config/config';
 import userService from './user.service';
-import ApiError from '@/utils/ApiError';
-import prisma from '@/client';
+import ApiError from '../utils/ApiError';
+import prisma from '../client';
 
-import { AuthTokensResponse } from '@/types/response';
+import { AuthTokensResponse } from '../types/response';
 
 /**
  * Generate token
